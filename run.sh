@@ -1,5 +1,5 @@
 #!/bin/bash
-source ENV/bin/activate
+# source ENV/bin/activate
 
 case $1 in
   dev)
