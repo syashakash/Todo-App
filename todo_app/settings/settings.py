@@ -23,13 +23,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 SECRET_KEY = 'b@t(jqtdcoswvb)hji!x64t8%-a4n@6*q^skx*#_zb6e4f#s#l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
 
 # Application definition
-
+os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -55,7 +51,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'todo_app/templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
